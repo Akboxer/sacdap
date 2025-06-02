@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import classroomImage from "@assets/image_1748840779112.png";
 
 export function HeroSection() {
   return (
@@ -48,8 +49,8 @@ export function HeroSection() {
           </div>
           <div className="hidden lg:block">
             <img
-              src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Modern educational institute building"
+              src={classroomImage}
+              alt="SACDAP Institute classroom with computers and students"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
           </div>

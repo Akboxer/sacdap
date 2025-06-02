@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import instituteImage from "@assets/image_1748840738970.png";
 
 export function Testimonials() {
   const testimonials = [
@@ -56,8 +57,8 @@ export function Testimonials() {
 
         <div className="text-center mt-12">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=400"
-            alt="Students in classroom learning environment"
+            src={instituteImage}
+            alt="SACDAP Institute students learning in computer lab"
             className="rounded-2xl shadow-lg w-full h-64 object-cover"
           />
         </div>
