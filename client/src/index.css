@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%; /* #FFFFFF */
+  --foreground: 20 14.3% 4.1%; /* #0F172A */
+  --muted: 220 14.3% 95.9%; /* #F1F5F9 */
+  --muted-foreground: 220 8.9% 46.1%; /* #64748B */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 20 14.3% 4.1%; /* #0F172A */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 20 14.3% 4.1%; /* #0F172A */
+  --border: 220 13% 91%; /* #E2E8F0 */
+  --input: 220 13% 91%; /* #E2E8F0 */
+  --primary: 0 84% 60%; /* #DC2626 - SACDAP Red */
+  --primary-foreground: 0 0% 98%; /* #FEFEFE */
+  --secondary: 220 14.3% 95.9%; /* #F1F5F9 */
+  --secondary-foreground: 220 8.9% 46.1%; /* #64748B */
+  --accent: 220 14.3% 95.9%; /* #F1F5F9 */
+  --accent-foreground: 220 8.9% 46.1%; /* #64748B */
+  --destructive: 0 84.2% 60.2%; /* #EF4444 */
+  --destructive-foreground: 60 9.1% 97.8%; /* #FEFCF3 */
+  --ring: 0 84% 60%; /* #DC2626 */
+  --radius: 0.5rem;
+  
+  /* SACDAP Custom Colors */
+  --sacdap-red: 0 84% 60%; /* #DC2626 */
+  --sacdap-grey: 220 13% 26%; /* #374151 */
+  --sacdap-light-grey: 220 14% 96%; /* #F3F4F6 */
+  --sacdap-accent-grey: 220 9% 46%; /* #6B7280 */
+}
+
+.dark {
+  --background: 224 71.4% 4.1%; /* #0F172A */
+  --foreground: 60 9.1% 97.8%; /* #F8FAFC */
+  --muted: 223 47% 11%; /* #1E293B */
+  --muted-foreground: 215.4 16.3% 56.9%; /* #94A3B8 */
+  --popover: 224 71.4% 4.1%; /* #0F172A */
+  --popover-foreground: 60 9.1% 97.8%; /* #F8FAFC */
+  --card: 224 71.4% 4.1%; /* #0F172A */
+  --card-foreground: 60 9.1% 97.8%; /* #F8FAFC */
+  --border: 215 27.9% 16.9%; /* #334155 */
+  --input: 215 27.9% 16.9%; /* #334155 */
+  --primary: 0 84% 60%; /* #DC2626 */
+  --primary-foreground: 0 0% 98%; /* #FEFEFE */
+  --secondary: 223 47% 11%; /* #1E293B */
+  --secondary-foreground: 215.4 16.3% 56.9%; /* #94A3B8 */
+  --accent: 223 47% 11%; /* #1E293B */
+  --accent-foreground: 215.4 16.3% 56.9%; /* #94A3B8 */
+  --destructive: 0 84.2% 60.2%; /* #EF4444 */
+  --destructive-foreground: 60 9.1% 97.8%; /* #F8FAFC */
+  --ring: 0 84% 60%; /* #DC2626 */
+  
+  /* SACDAP Custom Colors - Dark Mode */
+  --sacdap-red: 0 84% 60%; /* #DC2626 */
+  --sacdap-grey: 215.4 16.3% 56.9%; /* #94A3B8 */
+  --sacdap-light-grey: 223 47% 11%; /* #1E293B */
+  --sacdap-accent-grey: 215.4 16.3% 46.9%; /* #64748B */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  .sacdap-red {
+    color: hsl(var(--sacdap-red));
+  }
+
+  .bg-sacdap-red {
+    background-color: hsl(var(--sacdap-red));
+  }
+
+  .sacdap-grey {
+    color: hsl(var(--sacdap-grey));
+  }
+
+  .bg-sacdap-grey {
+    background-color: hsl(var(--sacdap-grey));
+  }
+
+  .sacdap-light-grey {
+    color: hsl(var(--sacdap-light-grey));
+  }
+
+  .bg-sacdap-light-grey {
+    background-color: hsl(var(--sacdap-light-grey));
+  }
+
+  .sacdap-accent-grey {
+    color: hsl(var(--sacdap-accent-grey));
+  }
+
+  .bg-sacdap-accent-grey {
+    background-color: hsl(var(--sacdap-accent-grey));
+  }
+}
