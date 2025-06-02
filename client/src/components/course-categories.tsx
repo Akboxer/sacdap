@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calculator, TrendingUp, Code, CheckCircle } from "lucide-react";
 import { Link } from "wouter";
+import courseBannerImage from "@assets/image_1748840761058.png";
 
 export function CourseCategories() {
   const categories = [
@@ -52,6 +53,18 @@ export function CourseCategories() {
           <h2 className="text-4xl font-bold text-sacdap-grey mb-4">Our Course Categories</h2>
           <p className="text-xl text-sacdap-accent-grey max-w-3xl mx-auto">
             Choose from our three specialized domains designed to meet the demands of today's competitive job market
+          </p>
+        </div>
+
+        {/* Course Technologies Banner */}
+        <div className="text-center mb-12">
+          <img
+            src={courseBannerImage}
+            alt="Technologies and courses offered at SACDAP - SAP, Accounting, Tally, Office, DevOps, Cloud Computing, AWS, AI"
+            className="rounded-2xl shadow-lg w-full h-auto max-w-4xl mx-auto"
+          />
+          <p className="text-sm text-sacdap-accent-grey mt-4">
+            Master industry-leading technologies including SAP, Tally, AWS, DevOps, and more
           </p>
         </div>
 

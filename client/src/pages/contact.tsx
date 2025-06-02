@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import officeImage from "@assets/image_1748840718095.png";
 
 export default function Contact() {
   return (
@@ -75,8 +76,8 @@ export default function Contact() {
               {/* Institute Image */}
               <div className="mt-8">
                 <img
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
-                  alt="SACDAP Institute Building"
+                  src={officeImage}
+                  alt="SACDAP Institute Office with modern setup"
                   className="rounded-xl w-full h-48 object-cover"
                 />
               </div>
